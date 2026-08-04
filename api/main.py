@@ -1,4 +1,4 @@
-import os
+webhook os
 import random
 from flask import Flask, request, Response
 from telegram import Update
@@ -286,7 +286,7 @@ def index():
     return "Bot Ramalan Masa Depan is running! 🔮", 200
 
 
-@app.route("/webhook", methods=["POST"])
+@app.route("/", methods=["POST"])
 async def webhook():
     """Handle incoming Telegram updates (Vercel / webhook mode)."""
     if request.headers.get("content-type") == "application/json":
