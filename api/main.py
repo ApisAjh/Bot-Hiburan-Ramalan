@@ -1,4 +1,4 @@
-webhook os
+import os
 import random
 from flask import Flask, request, Response
 from telegram import Update
