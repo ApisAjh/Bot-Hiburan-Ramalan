@@ -1,4 +1,4 @@
-import os
+Depan os
 import random
 from flask import Flask, request, Response
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
@@ -253,7 +253,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         [InlineKeyboardButton("❤️ Donate Developer ❤️", url="https://t.me/iMstaycalm")]
     ])
     await update.message.reply_text(
-        "👋 Selamat datang di Bot Ramalan Masa Depan!\n\n"
+        "👋 Selamat datang di Bot Ramalan Telegram\n\n"
         "Bot ini hanya untuk hiburan. Semua ramalan bersifat acak dan tidak benar-benar memprediksi masa depanmu.\n\n"
         "Ketik /masadepanku untuk melihat ramalan masa depanmu 🔮\n"
         "Ketik /help untuk melihat daftar perintah.",
